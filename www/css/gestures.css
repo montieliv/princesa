@@ -1,0 +1,48 @@
+body{
+	background-color:black;
+	text-align: center;
+}
+
+
+#zona-gestos{
+	width:100%;
+	/*background-color:#7fba67;*/
+	margin-top: 0;
+	min-height: 300px;
+	display: block;
+}
+
+#info{
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 0em;
+	text-transform: uppercase;
+}
+
+
+#zona-gestos.swipe-derecha{
+	-webkit-animation: swipe-derecha 1s 1;
+}
+
+#zona-gestos.swipe-izquierda{
+	-webkit-animation: swipe-izquierda 1s 1;
+}
+
+@-webkit-keyframes swipe-derecha{
+	0%,100%{
+		margin-left: 0%;
+	}
+	50%{
+		margin-left: 100%;
+	}
+}
+
+@-webkit-keyframes swipe-izquierda{
+	0%,100%{
+		width: 100%;
+	}
+	50%{
+		width: 0%;
+	}
+}
